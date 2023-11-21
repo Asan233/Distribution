@@ -8,7 +8,7 @@ networks:
 services:
   cacheserver1:
     container_name: cacheServer1
-    build: RPC
+    build: .
     ports:
       - "9527:9527"
     expose:
@@ -19,7 +19,7 @@ services:
 
   cacheserver2:
     container_name: cacheServer2
-    build: RPC
+    build: .
     ports:
       - "9528:9527"
     expose:
@@ -30,7 +30,7 @@ services:
 
   cacheserver3:
     container_name: cacheServer3
-    build: RPC
+    build: .
     ports:
       - "9529:9527"
     expose:
