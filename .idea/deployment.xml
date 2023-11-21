@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Ubuntu20.04 (1bdf735a-ad41-49da-bb94-49fde23f5723)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Ubuntu20.04 (1bdf735a-ad41-49da-bb94-49fde23f5723)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ubuntu/linux/Distribution" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
