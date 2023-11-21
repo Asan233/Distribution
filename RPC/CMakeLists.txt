@@ -69,7 +69,7 @@ target_link_libraries(rg_grpc_proto
 
 # Targets route_guide_(client|server)
 foreach(_target
-  client server)
+        server)
   add_executable(${_target}
     "${_target}.cc")
   target_link_libraries(${_target}
