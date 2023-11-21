@@ -1,0 +1,35 @@
+syntax = "proto3";
+// 定义Java类生成的包
+option java_package = "distribution.grpc";
+// 定义消息的包名，对于C++来说，引用的消息类在该Distribution命名空间下;
+package Distribution;
+
+//Define Server
+service RemoteService{
+  // Get Remote Service Json
+  rpc GetRemoteJson (JMessage) returns (JString) {}
+  // Delete Remote Service Json
+  rpc DeleteRemoteJson(JMessage) returns (JReply) {}
+  // post Json
+  rpc PostRemoteJson (Jsonfomt) returns (JString) {}
+}
+
+//The Remote Json Message containing the Key of Json
+message JMessage {
+  string key = 1;
+};
+
+//The Remote Service return the Json K/V String
+message JString{
+  string Json = 1;
+}
+
+//The Remote Service reply containing the number of delete Json
+message JReply{
+  int32 count = 1;
+}
+
+//The Json 发送
+message Jsonfomt{
+  string Json = 1;
+}

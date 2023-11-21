@@ -1,0 +1,40 @@
+version: '3.6'
+
+networks:
+  default:
+    external: true
+    name: web_net
+
+services:
+  cacheserver1:
+    container_name: cacheServer1
+    build: RPC
+    ports:
+      - "9527:9527"
+    expose:
+      - "50051"
+      - "50052"
+    networks:
+      default:
+
+  cacheserver2:
+    container_name: cacheServer2
+    build: RPC
+    ports:
+      - "9528:9527"
+    expose:
+      - "50051"
+      - "50052"
+    networks:
+      default:
+
+  cacheserver3:
+    container_name: cacheServer3
+    build: RPC
+    ports:
+      - "9529:9527"
+    expose:
+      - "50051"
+      - "50052"
+    networks:
+      default:
